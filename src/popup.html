@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    body #settings {
+      display: inline-block;
+      overflow: visible;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+      white-space: nowrap;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h3>Token</h3>
+    <input type="text" id="token">
+    <div id="date_acquired" style="font-size: 10pt"></div><br/>
+    <div id="msg" style="font-size: 10pt">(token copied to clipboard when extension is opened)</div>
+    <div id="settings">
+      <h3>Settings</h3>
+      <input type="checkbox" id="omitBearer">
+      <label>Omit "Bearer " prefix from token</label>
+      <br/>
+      (re-open the extension popup to apply)
+    </div>
+  </body>
+</html>
